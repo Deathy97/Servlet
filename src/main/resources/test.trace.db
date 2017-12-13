@@ -35,3 +35,7 @@ Caused by: org.h2.jdbc.JdbcSQLException: Nombre de usuario ó password incorrect
 Wrong user name or password [28000-192]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
 	... 30 more
+2017-11-15 08:48:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "PERSON" no encontrada
+Table "PERSON" not found; SQL statement:
+SELECT * FROM person WHERE dni = ? [42102-192]
