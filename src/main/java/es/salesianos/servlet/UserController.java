@@ -14,8 +14,8 @@ import es.salesianos.service.Service;
 @Controller
 public class UserController {
 
-	@Autowired
-	@Qualifier(value = "authorService")
+	@Autowired //Para enchufar clases
+	@Qualifier(value = "authorService")//Especifica la clase
 	private Service service;
 
 	// public String getWelcome() {
