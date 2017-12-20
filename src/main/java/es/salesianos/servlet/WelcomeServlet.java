@@ -8,13 +8,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import es.salesianos.service.Service;
 import es.salesianos.service.UserService;
 
 public class WelcomeServlet extends HttpServlet {
 
-
-	Service service = new UserService();
+	@Autowired
+	private Service service;
+	
 	private static final long serialVersionUID = 1L;
 
 	@Override

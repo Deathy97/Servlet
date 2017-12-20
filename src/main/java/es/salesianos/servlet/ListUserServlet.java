@@ -9,12 +9,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import es.salesianos.model.User;
 import es.salesianos.repository.UserRepository;
 
 public class ListUserServlet extends HttpServlet {
-
-	UserRepository userReposirory = new UserRepository();
+	
+	@Autowired
+	private UserRepository userReposirory;
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
